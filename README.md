@@ -64,12 +64,12 @@ Completed SQL first since it was small and was fairly confident in the answer.
 Went with a controller based approach for the API as it is what I have done before. 
 For the UI, I went with a component based approach, using props to pass information.
 
-Did not leave enough time for testing, so not very good test for backend, and
-could not get any tests to work on the frontend.
+Did not leave enough time for testing, so not very good test for backend, and could not get any tests to work on the frontend.
 
 Spent more time than expected on building the API, but should be easy enough to expand from here.
-Spent much more time than expected on the UI, trying to get the layout right. Ended up not having enough
-time to use form library I had intended to use (Zod). 
+Spent much more time than expected on the UI, trying to get the layout right. Ended up not having enough time to use form library I had intended to use (Zod). 
+
+Final thoughts: Enjoyed the task honestly, but time was the biggest constraint, don't have enough practice and was also watchng videos/looking through reference materials, which slowed me down. Sometimes I get lost in trying to make UI look nice. UI tests were a pain, many tutorials did not work, could have worked it out if I hadn't left it to the last minute.
 
 # AI Usage
 ## Github Copilot
