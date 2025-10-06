@@ -10,10 +10,12 @@ namespace backend.Services
         {
             string fullAddress = getAddress(externalProperty);
             bool hasValidTitle = externalProperty.title != null && !string.IsNullOrEmpty(externalProperty.title.Volume) && !string.IsNullOrEmpty(externalProperty.title.Folio);
+
+            VolumeFolio volumeFolio = externalProperty.title ?? new VolumeFolio(Volume: "Unknown Volume", Folio: "Unknown Folio");
             return new InternalProperty(
                 FullAddress: fullAddress,
                 LotPlan: externalProperty.lotPlan, // Not according to spec; can be nullable
-                VolumeFolio: externalProperty.title ?? new VolumeFolio(Volume: "Unknown Volume", Folio: "Unknown Folio"),
+                VolumeFolio: volumeFolio,
                 Status: hasValidTitle ? "KnownVolFol" : "UnknownVolFol",
                 SourceTrace: new SourceTrace(
                     provider: externalProperty.provider,

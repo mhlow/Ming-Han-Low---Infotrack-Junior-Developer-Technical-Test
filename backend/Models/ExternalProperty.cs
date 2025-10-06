@@ -6,5 +6,6 @@ public record ExternalProperty(
     AddressParts? addressParts,
     string? formattedAddress,
     LotPlan? lotPlan,
-    VolumeFolio? title
+    VolumeFolio? title,
+    string? extra
 );
