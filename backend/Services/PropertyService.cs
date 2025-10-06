@@ -9,12 +9,12 @@ namespace backend.Services
         public InternalProperty NormalizeProperty(ExternalProperty externalProperty)
         {
             string fullAddress = getAddress(externalProperty);
-
+            bool hasValidTitle = externalProperty.title != null && !string.IsNullOrEmpty(externalProperty.title.Volume) && !string.IsNullOrEmpty(externalProperty.title.Folio);
             return new InternalProperty(
                 FullAddress: fullAddress,
                 LotPlan: externalProperty.lotPlan, // Not according to spec; can be nullable
                 VolumeFolio: externalProperty.title ?? new VolumeFolio(Volume: "Unknown Volume", Folio: "Unknown Folio"),
-                Status: externalProperty.title != null ? "KnownVolFol" : "UnknownVolFol",
+                Status: hasValidTitle ? "KnownVolFol" : "UnknownVolFol",
                 SourceTrace: new SourceTrace(
                     provider: externalProperty.provider,
                     requestId: externalProperty.requestId,
