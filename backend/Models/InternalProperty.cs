@@ -2,7 +2,8 @@ namespace backend.Models;
 
 public record InternalProperty(
     string FullAddress,
-    LotPlan LotPlan,
+    LotPlan? LotPlan,
     VolumeFolio VolumeFolio,
-    string Status
+    string Status,
+    SourceTrace SourceTrace
 );
