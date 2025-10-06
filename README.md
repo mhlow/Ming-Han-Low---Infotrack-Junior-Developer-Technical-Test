@@ -11,10 +11,10 @@ All relevant files are stored in [backend](./backend) folder.
 All relevant files are stored in [frontend](./frontend) folder.
 
 ## SQL Task
-Answer is provided in [SQL Task.md](./SQL%20Task.md).
+Answer is provided in [Task3.sql](./Task3.sql).
 
 ## Tests
-Unit tests for their respective parts are in their respective folders:
+Unit tests for their respective parts are in their respective folders
 
 # Instructions to run the API and UI
 ## Prerequisites
@@ -27,10 +27,14 @@ Unit tests for their respective parts are in their respective folders:
 3. Run the API
 4. The API will be available where the console indicates.
 
-```bash
+```pwsh
 cd backend # assuming you are in ./Ming-Han-Low---Infotrack-Junior-Developer-Technical-Test
 dotnet restore
 dotnet run
+```
+
+```pwsh
+dotnet test
 ```
 
 ## Running the UI
@@ -39,10 +43,14 @@ dotnet run
 3. Start the React application
 4. The UI will be available where the console indicates.
 
-```bash
+```pwsh
 cd frontend # assuming you are in ./Ming-Han-Low---Infotrack-Junior-Developer-Technical-Test
 npm install
 npm start
+```
+
+```pwsh
+npm test
 ```
 
 # Time Spent
@@ -89,5 +97,6 @@ time to use form library I had intended to use (Zod).
 Gave answers about how it should be `m.id` instead of `m.matter_id` and that queries should check for between -30 and 30 days (disregarded).
 
 > Asked Claude to generate unit tests for both backend and frontend
-> Ended up not using them as they did not work properly, did my own research instead.
+Ended up not using them as they did not work properly, did my own research instead.
 
+Could've used AI more honestly but had enough of an idea of what to do.
