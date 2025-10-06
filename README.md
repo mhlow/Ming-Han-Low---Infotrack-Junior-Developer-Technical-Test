@@ -1,8 +1,6 @@
 # Infotrack Junior Developer Technical Test
 Ming Han Low
 
-Time started: 2025-10-6 19:30:00
-
 # Deliverables
 ## API + Mapping (C#/.NET 8)
 All relevant files are stored in [backend](./backend) folder.
@@ -59,20 +57,28 @@ npm test
 # Assumptions
 
 # Approach and Trade-offs
+- SQL
+- Build API
+- Build UI
+- Test API
+- Test UI
+
 Completed SQL first since it was small and was fairly confident in the answer.
 
 Went with a controller based approach for the API as it is what I have done before. 
 For the UI, I went with a component based approach, using props to pass information.
 
-Did not leave enough time for testing, so not very good test for backend, and could not get any tests to work on the frontend.
-
 Spent more time than expected on building the API, but should be easy enough to expand from here.
 Spent much more time than expected on the UI, trying to get the layout right. Ended up not having enough time to use form library I had intended to use (Zod). 
+
+Did not leave enough time for testing, so not very good test for backend, and could not get any tests to work on the frontend.
 
 Final thoughts: Enjoyed the task honestly, but time was the biggest constraint, don't have enough practice and was also watchng videos/looking through reference materials, which slowed me down. Sometimes I get lost in trying to make UI look nice. UI tests were a pain, many tutorials did not work, could have worked it out if I hadn't left it to the last minute.
 
 # AI Usage
 ## Github Copilot
+Used all around
+
 ## Claude (Sonnet 4.5)
 > What is wrong with these two SQL queries?
 > -- Query A: Return the count of certificates per matter (matter_id, certificates_count) for the last 30 days
