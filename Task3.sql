@@ -28,4 +28,5 @@ WHERE m.id NOT IN (
 -- If we know we wanted other queries that may involve date, a more useful index would be on 
 -- Certificates(created_at), which would speed up any query filtering by date.
 -- 
--- Depends on the other use cases of the database. 
+-- Depends on the other use cases of the database, as well as the number of distinct values 
+-- of each column, as if there were only two types of certificate, the speed up would be trivial.
